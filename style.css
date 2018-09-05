@@ -1,0 +1,208 @@
+/* main settings */
+* {
+    margin: 0;
+    padding: 0;
+    /* font-size: 0;
+    box-sizing: border-box; */
+    text-decoration: none;
+}
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px');
+body {
+    background-color: rgb(0, 0, 0);
+}
+.body-content {
+    width: 1200px;
+    max-width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background: #fff;
+}
+html, body {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+header, footer {
+	flex: 0;
+}
+main {
+	flex: 1;
+}
+.body-content__wrap {
+    width: 840px;
+    height: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    background: #fff;
+}
+
+
+header {
+    padding: 20px 0px;
+    background-color: #fff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+}
+header a {
+    color: #000;
+}
+nav {
+    display: inline-block;
+    float: right;
+    line-height: 46px;
+}
+nav a {
+    font-size: 16px;
+    padding-right: 20px;
+    font-weight: bold;
+}
+
+
+.main-infoBlock {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    padding: 20px 30px;
+    background-color: #f0f0f0;
+}
+.main-infoBlock__left {
+    flex-basis: 50%;
+    margin-right: 10px;
+}
+.main-infoBlock__left img {
+    width: 100%;
+}
+.main-infoBlock__right {
+    flex-basis: 50%;
+    margin-left: 10px;
+}
+.main-infoBlock__right h2 {
+    font-size: 21px;
+    font-family: 'Oswald', sans-serif;
+}
+.main-infoBlock__right p {
+    color: #8d8d8d;
+    font-size: 14px;
+    font-family: 'Slabo 27px', serif;
+    margin: 15px 0;
+}
+.main-infoBlock__right button {
+    background-image: linear-gradient(#d94137, #b4362e);
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    padding: 10px 23px;
+}
+.main-infoBlock__right button:hover {
+    cursor: pointer;
+}
+
+.main-textBlock {
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+.main-textBlock h2 {
+    font-size: 18px;
+    font-family: 'Oswald', sans-serif;
+}
+.main-textBlock p {
+    color: #8d8d8d;
+    font-size: 14px;
+    font-family: 'Slabo 27px', serif;
+    margin-top: 10px;
+}
+
+.main-itemsBlock {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    margin-bottom: 40px;
+}
+.main-itemsBlock__content {
+    flex-basis: 25%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    font-size: 14px;
+    font-family: 'Slabo 27px', serif;
+    font-style: italic;
+}
+.main-itemsBlock__content img {
+    flex-basis: 25%;
+    margin: 0 15px;
+}
+.main-itemsBlock__content p {
+    flex-basis: 50%
+}
+
+@media screen and (max-width: 768px) {
+
+    header nav {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    header nav {
+        flex-basis: 100%;
+        width: 100%;
+        flex-direction: column;
+    }
+    header nav a {
+        transition: all 1.5s ease;
+    }
+    header nav a:hover {
+        background-color: #f0f0f0;
+    }
+
+    main .main-infoBlock {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    main .main-infoBlock .main-infoBlock__left {
+        flex-basis: 100%;
+        /* display: block;
+        margin: 0 auto */
+    }
+    main .main-infoBlock .main-infoBlock__right {
+        flex-basis: 100%;
+        text-align: center;
+    }
+    main .main-textBlock h2 {
+        text-align: center;
+    }
+    main .main-textBlock p {
+        padding: 0 20px;
+    }
+
+    main .main-itemsBlock {
+        flex-direction: column;
+    }
+    .main-itemsBlock__content img {
+        flex-basis: 10%;
+        margin: 10px 15px;
+    }
+    .main-itemsBlock__content p {
+        flex-basis: 30%;
+        margin: 10px 0;
+    }
+}
